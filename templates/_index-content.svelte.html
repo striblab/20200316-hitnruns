@@ -1,0 +1,32 @@
+<!-- Main content here -->
+<main id="main-content" class="content" role="main">
+  <div class="container-lg">
+    <div id="wrapper">
+    <div class="slide" id="nb">
+      <div class="chartTitle">Where hit-and-runs happen most</div>
+      <div class="chatter">One of Minneapolis’ most common traffic violations, the
+          hit-and-run, is also among its most under-investigated. Shaded here from <span class="legendary blue1">1</span> to <span class="legendary blue5">80 or more</span> incidents, they were most prominent on the North Side and in Uptown from 2015 through Feb. 3, 2020. Only a small fraction of reports led to <span class="dot arrest"></span> arrests.</div>
+      <div id="map" class="map"></div>
+      <div class="byline">Data source: Minneapolis Police Department | Graphic by <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a></div>
+    </div>
+  </div>
+  </div>
+</main>
+
+<script>
+  export default {
+    oncreate() {
+      // For content that lives in the CMS directly, we hack
+      // around the share bits by removing it before we load
+      // the component, then re-attach here.
+      //
+      // This looks like
+      // <div class="share-placeholder">
+      //   <!-- share -->
+      // </div>
+      if (this.get().attachShare) {
+        this.get().attachShare();
+      }
+    }
+  };
+</script>

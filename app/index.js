@@ -100,6 +100,7 @@ var map = new mapboxgl.Map({
     // center: [-93.264313, 44.973269],
     center: [-93.272226, 44.986057],
     zoom: dzoom,
+    minZoom: dzoom
 });
 
 map.addControl(new mapboxgl.NavigationControl());
